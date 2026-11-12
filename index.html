@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080e24">
+  <title>Solar System — Full Information</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">✦</span><span>ASTRO<span class="brand-light">NOMY</span></span></div>
+      <span class="top-note">INTERACTIVE SOLAR SYSTEM</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">OUR COSMIC NEIGHBOURHOOD</p>
+      <h1>Explore the <em>Solar System</em></h1>
+      <p class="lead">Eight planets. One star. Countless wonders.</p>
+    </section>
+
+    <section class="universe" aria-label="Interactive solar system model">
+      <div class="solar-system" id="solarSystem">
+        <div class="orbit orbit-mercury"><button class="planet mercury" data-planet="mercury" aria-label="Mercury"></button></div>
+        <div class="orbit orbit-venus"><button class="planet venus" data-planet="venus" aria-label="Venus"></button></div>
+        <div class="orbit orbit-earth"><button class="planet earth" data-planet="earth" aria-label="Earth"></button></div>
+        <div class="orbit orbit-mars"><button class="planet mars" data-planet="mars" aria-label="Mars"></button></div>
+        <div class="orbit orbit-jupiter"><button class="planet jupiter" data-planet="jupiter" aria-label="Jupiter"></button></div>
+        <div class="orbit orbit-saturn"><button class="planet saturn" data-planet="saturn" aria-label="Saturn"><span></span></button></div>
+        <div class="orbit orbit-uranus"><button class="planet uranus" data-planet="uranus" aria-label="Uranus"></button></div>
+        <div class="orbit orbit-neptune"><button class="planet neptune" data-planet="neptune" aria-label="Neptune"></button></div>
+        <button class="sun" data-planet="sun" aria-label="Sun"><span></span></button>
+        <div class="starfield"></div>
+      </div>
+      <aside class="planet-panel" id="planetPanel">
+        <div class="panel-kicker">PLANET PROFILE</div>
+        <div class="panel-heading">
+          <span class="planet-dot earth-dot" id="panelDot"></span>
+          <h2 id="planetName">Earth</h2>
+        </div>
+        <p id="planetDescription">Our home planet and the only known world to support life.</p>
+        <div class="facts">
+          <div><span>TYPE</span><strong id="planetType">Terrestrial</strong></div>
+          <div><span>DIAMETER</span><strong id="planetDiameter">12,742 km</strong></div>
+          <div><span>DAY LENGTH</span><strong id="planetDay">24 hours</strong></div>
+          <div><span>YEAR LENGTH</span><strong id="planetYear">365.25 days</strong></div>
+          <div><span>MOONS</span><strong id="planetMoons">1</strong></div>
+          <div><span>AVG. DISTANCE</span><strong id="planetDistance">149.6 million km</strong></div>
+        </div>
+        <div class="panel-footer">SELECT A PLANET TO EXPLORE</div>
+      </aside>
+    </section>
+
+    <nav class="planet-nav" aria-label="Select a planet">
+      <button data-select="sun" class="nav-item"><i class="sun-dot"></i><span>Sun</span></button>
+      <button data-select="mercury" class="nav-item"><i class="mercury-dot"></i><span>Mercury</span></button>
+      <button data-select="venus" class="nav-item"><i class="venus-dot"></i><span>Venus</span></button>
+      <button data-select="earth" class="nav-item active"><i class="earth-dot"></i><span>Earth</span></button>
+      <button data-select="mars" class="nav-item"><i class="mars-dot"></i><span>Mars</span></button>
+      <button data-select="jupiter" class="nav-item"><i class="jupiter-dot"></i><span>Jupiter</span></button>
+      <button data-select="saturn" class="nav-item"><i class="saturn-dot"></i><span>Saturn</span></button>
+      <button data-select="uranus" class="nav-item"><i class="uranus-dot"></i><span>Uranus</span></button>
+      <button data-select="neptune" class="nav-item"><i class="neptune-dot"></i><span>Neptune</span></button>
+    </nav>
+    <footer><span>ASTRONOMY EXPLORER</span><span>DATA IS APPROXIMATE · NOT TO SCALE</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
